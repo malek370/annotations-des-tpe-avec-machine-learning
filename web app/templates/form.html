@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="/static/img/Logo_BIAT_FR_(3).png" alt="BIAT" id="logo" class="logo" width="50" height="34">
+    <a href="/form" style="background-color: orange;">prediction</a>
+    <a href="/history">Historique</a>
+    <a id="deconnect" href="/logout">deconnecter</a>
+  </div>
+  <br><br>
+  <div class="container ">
+    <form id="prediction-form" action="#" autocomplete="off">
+      <div class="row mb-3">
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4">
+          <label for="NUM_CLT" class="form-label">NUMERO ID D'ENTREPRISE</label>
+          <input type="text" class="form-control" id="NUM_CLT" name="NUM_CLT" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="TOT_BL" class="form-label">TOTALE BILAN</label>
+          <input type="text" class="form-control" id="TOT_BL" name="TOT_BL" required>
+        </div>
+        <div class="col-md-4">
+          <label for="PAS" class="form-label">PASSIF</label>
+          <input type="text" class="form-control" id="PAS" name="PAS" required>
+        </div>
+        <div class="col-md-4">
+          <label for="CA" class="form-label">CHIFFRE D'AFFAIRES</label>
+          <input type="text" class="form-control" id="CA" name="CA" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="ACT" class="form-label">ACTIF</label>
+          <input type="text" class="form-control" id="ACT" name="ACT" required>
+        </div>
+        <div class="col-md-4">
+          <label for="CAP_PROP" class="form-label">CAPITAUX PROPRE</label>
+          <input type="text" class="form-control" id="CAP_PROP" name="CAP_PROP" required>
+        </div>
+        <div class="col-md-4">
+          <label for="FR" class="form-label">FONDS DE ROULEMENT</label>
+          <input type="text" class="form-control" id="FR" name="FR" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="BFR" class="form-label">BESOIN DE FONDS DE ROULEMENT</label>
+          <input type="text" class="form-control" id="BFR" name="BFR" required>
+        </div>
+        <div class="col-md-4">
+          <label for="LIQ" class="form-label">LIQUIDITE</label>
+          <input type="text" class="form-control" id="LIQ" name="LIQ" required>
+        </div>
+        <div class="col-md-4">
+          <label for="DS" class="form-label">DETTES STRUCTURE</label>
+          <input type="text" class="form-control" id="DS" name="DS" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label for="CFN" class="form-label">CASH-FLOW NET</label>
+          <input type="text" class="form-control" id="CFN" name="CFN" required>
+        </div>
+        <div class="col-md-4 ">
+          <label for="RN" class="form-label">RESULTAT NET</label>
+          <input type="text" class="form-control" id="RN" name="RN" required>
+        </div>
+        <div class="col-md-4">
+          <label for="FPN" class="form-label">FONDS PROPRES NETS</label>
+          <input type="text" class="form-control" id="FPN" name="FPN" required>
+        </div>
+      </div>
+
+
+      <div class="row mb-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <button id='predict' type="button" class="btn btn-primary predir ">Predir</button>
+          <button type="button" onclick="resetForm()" class="btn btn-outline-secondary">reinitialiser</button>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div id="result"></div>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="static/form.js"></script>
+
+
+</body>
+
+</html>

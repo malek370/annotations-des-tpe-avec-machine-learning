@@ -1,0 +1,104 @@
+body {
+  background-color: #99b9d9;
+}
+
+.form-control {
+  background-color: whitesmoke;
+  color: #F48E13;
+}
+
+.predir {
+  background-color: darkblue;
+  color: white;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: darkblue !important;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+
+.form-control:focus {
+  border-color: #F48E13;
+  box-shadow: 0 0 0 0.2rem rgba(244, 142, 19, 0.25);
+}
+
+#result {
+  text-align: center;
+}
+
+.navbar {
+  background-color: darkblue;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: darkblue;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the links in the navbar */
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: orange;
+}
+
+th {
+  text-align: center;
+  background-color: #CEC8C0 !important;
+}
+
+td {
+  text-align: center;
+
+}
+
+tr {
+  border-style: solid !important;
+  border-color: #F48E13;
+}
+
+.details {
+  background-color: aliceblue !important;
+  color: black;
+}
+
+.no-hover:hover {
+  background-color: initial;
+  color: inherit;
+  border-color: initial;
+}
+
+#filter {
+  background-color: #F48E13 !important;
+  color: black;
+}
+
+.navbar img{
+  text-align: left;
+ 
+}
+#logo:hover {
+cursor: pointer;
+}
+.cardtext{
+  font-family: fantasy;
+  color: darkblue;
+}
